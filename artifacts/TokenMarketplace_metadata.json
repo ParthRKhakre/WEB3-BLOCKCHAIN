@@ -1,0 +1,155 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_slvToken",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "expectedPayment",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "actualPayment",
+						"type": "uint256"
+					}
+				],
+				"name": "TokenMarketplace_InsufficientEthPayment",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "expectedToken",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "actualToken",
+						"type": "uint256"
+					}
+				],
+				"name": "TokenMarketplace_TokenBalance",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "numberOfTokens",
+						"type": "uint256"
+					}
+				],
+				"name": "TokenMarketplace_ZeroNumberOfTokens",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "TOKEN_PRICE",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "numberOfTokens",
+						"type": "uint256"
+					}
+				],
+				"name": "buyTokensFromMarketplace",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "slvToken",
+				"outputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"1 - Solidity/TokenMarketplace.sol": "TokenMarketplace"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"1 - Solidity/TokenMarketplace.sol": {
+			"keccak256": "0x95c683b1e7b7aa0e7ed80f386c64445bb8705dec80c19f51444705c11d62f806",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://8548099e2b22b48ca6ca7235e34f429cc8ebcb655eb76c96856a8908b952e9eb",
+				"dweb:/ipfs/QmPManuDryiMYuJuMuErQvSBuzre5dxjVFNoxfg2sF1PYC"
+			]
+		},
+		"@openzeppelin/contracts/interfaces/IERC20.sol": {
+			"keccak256": "0x1a6221315ce0307746c2c4827c125d821ee796c74a676787762f4778671d4f44",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1bb2332a7ee26dd0b0de9b7fe266749f54820c99ab6a3bcb6f7e6b751d47ee2d",
+				"dweb:/ipfs/QmcRWpaBeCYkhy68PR3B4AgD7asuQk7PwkWxrvJbZcikLF"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0x74ed01eb66b923d0d0cfe3be84604ac04b76482a55f9dd655e1ef4d367f95bc2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5282825a626cfe924e504274b864a652b0023591fa66f06a067b25b51ba9b303",
+				"dweb:/ipfs/QmeCfPykghhMc81VJTrHTC7sF6CRvaA1FXVq2pJhwYp1dV"
+			]
+		}
+	},
+	"version": 1
+}
